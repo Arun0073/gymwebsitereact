@@ -1,0 +1,101 @@
+.Testimonial{
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+.daaya2{
+    display: flex;
+    flex: 1 1;
+    gap: 2rem;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: white;
+}
+.daaya2>:nth-child(1){
+    color: var(--orange);
+    font-weight: bold;
+}
+.daaya2>:nth-child(2),
+.daaya2>:nth-child(3){
+    font-size: 3rem;
+    font-weight: bold;
+}
+.daaya2>:nth-child(4){
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+.baaya2{
+    flex: 1;
+    position: relative;
+}
+.baaya2>img{
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+}
+.baaya2>:nth-child(1){
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    border: 2px solid orange;
+    background-color: transparent;
+    right: 9rem;
+    top: 0.9rem;
+}
+.baaya2>:nth-child(2){
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    top: 4rem;
+    right:7rem;
+    background:var(--planCard);
+}
+.arrows{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+}
+.arrows>img{
+    width: 1.5rem;
+    cursor: pointer;
+}
+@media screen and (max-width:768px){
+.Testimonial{
+    flex-direction: column;
+}
+.daaya2>:nth-child(2),
+.daaya2>:nth-child(3){
+    font-size: xx-large;
+}
+.baaya2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.baaya2>div{
+    position: relative;
+    display: none;
+}
+.baaya2>img{
+    top: 0;
+    right: 0;
+    position: relative;
+    align-items: center;
+}
+.baaya2>:last-child{
+    display: block;
+    bottom: 0;
+    left: 0;
+}
+
+
+}
